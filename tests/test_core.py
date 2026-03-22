@@ -30,7 +30,7 @@ def test_mutual_information_basic():
 def test_mutual_information_with_sample_image():
     """
     Test mutual information on a real sample image (if Pillow is installed).
-    The sample image ``brain_mri.png`` is stored in ``data/`` and is derived
+    The sample image ``Brain_MRI.jpg`` is stored in ``data/`` and is derived
     from a public-domain MRI scan.
     """
     if not _HAS_PIL:
@@ -39,7 +39,7 @@ def test_mutual_information_with_sample_image():
 
     # Path to the sample image (relative to this test file)
     img_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "..", "data", "brain_mri.png")
+        os.path.join(os.path.dirname(__file__), "..", "..", "data", "Brain_MRI.jpg")
     )
 
     # Load the image and flatten to 1‑D

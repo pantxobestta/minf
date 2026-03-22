@@ -7,7 +7,7 @@
 - Computes mutual information in **nats** using a joint‑histogram approach.
 - Works with **signals** (1‑D arrays) and **images** (2‑D arrays).
 - Simple API: `mutual_information(a, b, bins=256)`.
-- Includes a small test that evaluates MI on a public‑domain **MRI sample image** (`data/brain_mri.png`), if Pillow is available.
+- Includes a small test that evaluates MI on a public‑domain **MRI sample image** (`data/Brain_MRI.jpg`), if Pillow is available.
 
 ## Installation
 
@@ -45,7 +45,7 @@ mi_img = mutual_information(img, img)
 print('MI identical images:', mi_img)   # → 0.0
 ```
 
-If Pillow is installed (`pip install pillow`), the test suite will also load a real MRI sample image located at `data/brain_mri.png`.
+If Pillow is installed (`pip install pillow`), the test suite will also load a real MRI sample image located at `data/Brain_MRI.jpg`.
 
 ## Running the Tests
 
@@ -71,4 +71,4 @@ If you use this implementation in research, please cite the original MATLAB File
 
 ## How the sample image is used
 
-The repository ships a small brain MRI image (`data/brain_mri.png`). The test `test_mutual_information_with_sample_image` loads this image, adds a tiny amount of noise, and verifies that mutual information is non‑negative. If the `Pillow` library is not available, the test gracefully skips the image‑based part.
+The repository ships a small brain MRI image (`data/Brain_MRI.jpg`). The test `test_mutual_information_with_sample_image` loads this image, adds a tiny amount of noise, and verifies that mutual information is non‑negative. If the `Pillow` library is not available, the test gracefully skips the image‑based part.
