@@ -7,7 +7,7 @@
 - Computes mutual information in **nats** using a joint‑histogram approach.
 - Works with **signals** (1‑D arrays) and **images** (2‑D arrays).
 - Simple API: `mutual_information(a, b, bins=256)`.
-- Includes a small test that evaluates MI on a public‑domain **MRI sample image** (`data/Brain_MRI.jpg`), if Pillow is available.
+- Includes a small test that evaluates MI on a public‑domain **MRI sample image** (`data/brain_mri.png`), if Pillow is available.
 
 ## Installation
 
